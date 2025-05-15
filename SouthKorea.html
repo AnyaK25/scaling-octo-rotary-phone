@@ -25,27 +25,40 @@
 
 	<center><h1>South Korea</h1></center>
 
-  South Korea is considered among the most advanced democracies in continental and East Asia. Under the 1987 constitution, it maintains a unitary presidential republic with a popularly elected unicameral legislature, the National Assembly. Korean cuisine is largely based on rice, noodles, tofu, vegetables, fish and meats. Traditional meals are noted for the number of side dishes, banchan, which accompany steam-cooked short-grain rice. Every meal is accompanied by numerous banchan. Kimchi, a fermented, usually spicy vegetable dish is commonly served at every meal and is one of the best known dishes. The cultural phenomenon known as Hallyu or the "Korean Wave," has swept many countries across Continental and East Asia making South Korea a major soft power as an exporter of popular culture and entertainment, rivaling Western nations such as the United States and the United Kingdom.
-</script>
 
+<div class="typewriter" id="typewriterText">South Korea is considered among the most advanced democracies in continental and East Asia. Under the 1987 constitution, it maintains a unitary presidential republic with a popularly elected unicameral legislature, the National Assembly. Korean cuisine is largely based on rice, noodles, tofu, vegetables, fish and meats. Traditional meals are noted for the number of side dishes, banchan, which accompany steam-cooked short-grain rice. Every meal is accompanied by numerous banchan. Kimchi, a fermented, usually spicy vegetable dish is commonly served at every meal and is one of the best known dishes. The cultural phenomenon known as Hallyu or the "Korean Wave," has swept many countries across Continental and East Asia making South Korea a major soft power as an exporter of popular culture and entertainment, rivaling Western nations such as the United States and the United Kingdom.</div>
 
-<button onclick="typeWriter()">Click me</button>
-
-<p id="demo"></p>
-
-<script>
-var i = 0;
-var txt = 'Lorem ipsum dummy text blabla.';
-var speed = 50;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
+<style>
+  .typewriter {
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    border-right: 2px solid #00ffcc;
+    white-space: pre-wrap; /* wrap text + preserve spacing */
+    overflow: hidden;
+    width: 100%; /* full width */
+    max-width: 100%; /* full width for responsiveness */
+    color: black;
+    animation: typing 6s steps(942, end) forwards, blink 0.75s step-end infinite;
   }
-}
-</script>
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+</style>
+
+
+
 
 
 	<center><img src="SouthKoreaPhoto.jpg" alt="South Korean Village"/></center>
